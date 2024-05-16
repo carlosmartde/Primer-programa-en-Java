@@ -22,7 +22,8 @@ public class Main {
         }else {
             System.out.println(b+"Es mayor que "+a);
         }*/
-        //NUMERO PAR O INPAR
+        //NUMERO PAR O IMPAR
+        /*
         int numero;
         System.out.println("INGRESE UN NUMERO");
         numero = Integer.parseInt(System.console().readLine());
@@ -30,6 +31,17 @@ public class Main {
             System.out.println(numero+" SI ES UN NUMERO PAR");
         }else {
             System.out.println(numero+" NO ES UN NUMERO PAR");
+        }*/
+        //CALCULAR EL FACTORIAL DE UN NUMERO
+        int numero;
+        int factorial=1;
+        System.out.println("INGRESE UN NUMERO:");
+        numero = Integer.parseInt(System.console().readLine());
+        int i=numero;
+        while (i>1){
+            factorial*=i;
+            i--;
         }
+        System.out.println("El factorial de "+numero+" es: "+factorial);
     }
 }

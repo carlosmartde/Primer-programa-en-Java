@@ -12,7 +12,7 @@ public class Main {
             System.out.println("No es mayor de edad");
         }*/
         //DETERMINAR QUE NUMERO ES MAYOR
-        float a,b;
+        /*float a,b;
         System.out.println("Ingrese el primer numero: ");
         a = Float.parseFloat(System.console().readLine());
         System.out.println("Ingrese el segundo numero: ");
@@ -21,6 +21,15 @@ public class Main {
             System.out.println(a+" Es mayor que "+b);
         }else {
             System.out.println(b+"Es mayor que "+a);
+        }*/
+        //NUMERO PAR O INPAR
+        int numero;
+        System.out.println("INGRESE UN NUMERO");
+        numero = Integer.parseInt(System.console().readLine());
+        if (numero % 2 == 0) {
+            System.out.println(numero+" SI ES UN NUMERO PAR");
+        }else {
+            System.out.println(numero+" NO ES UN NUMERO PAR");
         }
     }
 }

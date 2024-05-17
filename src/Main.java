@@ -72,6 +72,7 @@ public class Main {
             }
         }
         scanner.close();*/
+        /*
         Scanner scanner = new Scanner(System.in);
         int numero = 0;
 
@@ -100,6 +101,48 @@ public class Main {
             }
             i++;
         }
+
+        scanner.close();*/
+        Scanner scanner = new Scanner(System.in);
+        int numero = 0;
+        while (true) {
+            System.out.print("Por favor, ingrese un número del 1 al 5: ");
+            if (scanner.hasNextInt()) {
+                numero = scanner.nextInt();
+                if (numero >= 1 && numero <= 5) {
+                    break;
+                } else {
+                    System.out.println("El número debe estar entre 1 y 5. Intente de nuevo.");
+                }
+            } else {
+                System.out.println("Entrada no válida. Por favor, ingrese un número.");
+                scanner.next(); // Descarta la entrada no válida
+            }
+        }
+        String dia;
+        switch (numero) {
+            case 1:
+                dia = "Lunes";
+                break;
+            case 2:
+                dia = "Martes";
+                break;
+            case 3:
+                dia = "Miércoles";
+                break;
+            case 4:
+                dia = "Jueves";
+                break;
+            case 5:
+                dia = "Viernes";
+                break;
+            default:
+                dia = "Número no válido";
+                break;
+        }
+
+        // Mostrar el día de la semana
+        System.out.println("\nEl día correspondiente es: " + dia);
 
         scanner.close();
     }
